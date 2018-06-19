@@ -38,6 +38,7 @@ public class DiaryController {
 		if(result.hasErrors()) {
 			return "diary/add";
 		}
+		diaryService.add(diary);
 		return "redirect:/";
 	}
 }
